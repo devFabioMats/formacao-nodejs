@@ -69,8 +69,8 @@ async function playRaceEngine(character1, character2) {
             totalTesteSkill2 = diceResult2 + character2.MANOBRABILIDADE;
         }
         if(block === "CONFRONTO"){
-            totalTesteSkill1 = diceResult1 + character1.PODER;
-            totalTesteSkill2 = diceResult2 + character2.PODER;
+            let powerResult1 = diceResult1 + character1.PODER;
+            let powerResult2 = diceResult2 + character2.PODER;
         }
     }
 }
