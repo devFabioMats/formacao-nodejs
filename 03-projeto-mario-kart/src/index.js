@@ -36,5 +36,6 @@ main();
 
 (async function main() {
     // win + . para abrir emojis
+    // interpolacao de strings `` e ${}
     console.log(`🏁🚨 Corrida entre ${player1.NOME} e ${player2.NOME} começando... \n`);
 })();
