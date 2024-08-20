@@ -34,7 +34,14 @@ main();
 })();
 */
 
-async function playRaceEngine(character1, character2) {}
+async function playRaceEngine(character1, character2) {
+    for(let round = 1; round <= 5; round++) {
+        console.log(`🏁 Rodada ${round} 🏁`);
+
+        //comentar tudo ctrl + k + c
+        //sortear bloco
+    }
+}
 
 (async function main() {
     // win + . para abrir emojis
