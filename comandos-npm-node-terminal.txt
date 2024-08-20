@@ -10,3 +10,4 @@ comandos npm e node
   npm init -y           inicia um projeto node
   node [arquivo]     roda arquivo javascript
   node --watch [arquivo] node fica vigiando arquivo
+  ctrl + c fecha o modo vigia do node
