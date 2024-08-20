@@ -60,9 +60,17 @@ async function playRaceEngine(character1, character2) {
         console.log(`🏁 Rodada ${round} 🏁`);
 
         //comentar tudo ctrl + k + c
-        //sortear bloco
+        //chama a funcao de sortear bloco
         let block = await getRandomBlock();
         console.log(`Bloco: ${block} \n`);
+
+        //chama a funcao de rolar os dados
+        let diceResult1 = await rollDice();
+        let diceResult2 = await rollDice();
+
+        //teste de habilidade
+        let totalTesteSkill1= 0;
+        let totalTesteSkil21= 0;
     }
 }
 
