@@ -34,12 +34,35 @@ main();
 })();
 */
 
+//funcao para sortear qual blocos
+async function getRandomBlock(){
+    let random = Math.random(); //sorteia valor aleatorio entre 0 e 1
+    let result;
+
+    switch(true) {
+        case random < 0.33:
+            result = "RETA"
+            break;
+        case random < 0.66:
+            result = "CURVA"
+            break;
+        default:
+            result = "CONFRONTO"
+            break;
+    }
+
+    return result;
+}
+
 async function playRaceEngine(character1, character2) {
+    // let -> declarar variável
     for(let round = 1; round <= 5; round++) {
         console.log(`🏁 Rodada ${round} 🏁`);
 
         //comentar tudo ctrl + k + c
         //sortear bloco
+        let block = await getRandomBlock();
+        console.log(`Bloco: ${block} \n`);
     }
 }
 
