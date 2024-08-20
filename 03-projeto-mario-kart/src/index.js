@@ -21,19 +21,6 @@ async function rollDice() {
     return Math.floor(Math.random() * 6) + 1; 
 };
 
-/* 
-// chama a função main para mostrar no terminal
-async function main() {
-    console.log("hello");
-};
-main();
-//-----------------------------------------------------
-// funcao auto-invocável, sem precisar "chamá-la"
-(async function main() {
-    console.log("hello");
-})();
-*/
-
 //funcao para sortear qual blocos
 async function getRandomBlock(){
     let random = Math.random(); //sorteia valor aleatorio entre 0 e 1
@@ -71,6 +58,20 @@ async function playRaceEngine(character1, character2) {
         //teste de habilidade
         let totalTesteSkill1= 0;
         let totalTesteSkil21= 0;
+
+        //=== se o valor e o tipo sao iguais
+        if(block === "RETA"){
+            totalTesteSkill1 = diceResult1 + character1.VELOCIDADE;
+            totalTesteSkill2 = diceResult2 + character2.VELOCIDADE;
+        }
+        if(block === "CURVA"){
+            totalTesteSkill1 = diceResult1 + character1.MANOBRABILIDADE;
+            totalTesteSkill2 = diceResult2 + character2.MANOBRABILIDADE;
+        }
+        if(block === "CONFRONTO"){
+            totalTesteSkill1 = diceResult1 + character1.PODER;
+            totalTesteSkill2 = diceResult2 + character2.PODER;
+        }
     }
 }
 
@@ -83,3 +84,16 @@ async function playRaceEngine(character1, character2) {
     //await -> espera a funcao terminar para continuar
     await playRaceEngine(player1, player2);
 })();
+
+/* 
+// chama a função main para mostrar no terminal
+async function main() {
+    console.log("hello");
+};
+main();
+//-----------------------------------------------------
+// funcao auto-invocável, sem precisar "chamá-la"
+(async function main() {
+    console.log("hello");
+})();
+*/
