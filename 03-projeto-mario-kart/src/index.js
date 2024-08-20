@@ -34,8 +34,14 @@ main();
 })();
 */
 
+async function playRaceEngine(character1, character2) {}
+
 (async function main() {
     // win + . para abrir emojis
     // interpolacao de strings `` e ${}
     console.log(`🏁🚨 Corrida entre ${player1.NOME} e ${player2.NOME} começando... \n`);
+
+    //funcao que chama funcao
+    //await -> espera a funcao terminar para continuar
+    await playRaceEngine(player1, player2);
 })();
