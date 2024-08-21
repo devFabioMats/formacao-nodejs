@@ -9,6 +9,7 @@ async function getFullName(codeId, productName) {
     await doBreakLine();
 }
 
+// hidden function
 async function doBreakLine(){
     console.log("\n");
 }
