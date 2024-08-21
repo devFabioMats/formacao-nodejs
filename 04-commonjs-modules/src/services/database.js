@@ -4,7 +4,8 @@
 //     console.log("Conectando ao banco de dados: " + dataName);
 // }
 
-exports.connecToDatabase = (dataName) =>{
+// export default async
+exports.connecToDatabase = async (dataName) =>{
     console.log("Conectando ao banco de dados: " + dataName);
 }
 
@@ -13,6 +14,6 @@ exports.connecToDatabase = (dataName) =>{
 //     console.log("Desconectando do banco de dados");
 // }
 
-exports.disconnectDataBase = () => {
+exports.disconnectDataBase = async () => {
     console.log("Desconectando do banco de dados");
 }
