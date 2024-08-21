@@ -1,5 +1,5 @@
 // requerendo/importando o arquivo products
-const p = require("./services/products");
+const product = require("./services/products");
 const config = require("./services/config");
 
 async function main(){
@@ -9,7 +9,7 @@ async function main(){
     // p.getFullName("508", "monitor");
     // p.getProductLabel("mousepad");
 
-    console.log(config.production);
+    
     console.log(config.client);
 
 }

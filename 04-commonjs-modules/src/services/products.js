@@ -1,7 +1,16 @@
+const productType = {
+    version: "digital",
+    tax: "x1",
+}
+
 // todas as funções que lidam com produto
 async function getFullName(codeId, productName) {
-    console.log("\n");
     console.log("productx: " + codeId + "--" + productName);
+    await doBreakLine();
+}
+
+async function doBreakLine(){
+    console.log("\n");
 }
 
 async function getProductLabel(productName){
@@ -12,4 +21,5 @@ async function getProductLabel(productName){
 module.exports = {
     getFullName,
     getProductLabel,
+    productType
 }
