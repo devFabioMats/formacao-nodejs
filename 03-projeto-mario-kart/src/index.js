@@ -101,6 +101,8 @@ async function playRaceEngine(character1, character2) {
         } else if (totalTestSkill2 > totalTestSkill1) {
             console.log(`\n${character2.NOME} marcou 1 ponto!`);
             character2.PONTOS++;
+        } else {
+            console.log("\nEmpate! Ninguém marcou pontos nessa rodada!");
         }
 
         console.log("-------------------------------------");
