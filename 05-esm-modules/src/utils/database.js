@@ -13,4 +13,4 @@ async function disconnectFromDatabase(dataName) {
   console.log(`desconectado do banco ${dataName}`);
 }
 
-export { connectToDatabase, disconnectFromDatabase };
+export { connectToDatabase, disconnectFromDatabase, databaseType };
