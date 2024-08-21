@@ -1,7 +1,4 @@
 // const database = require("./utils/database.js");
-import * as database from "./utils/database.js";
+import { disconnectFromDatabase } from "./utils/database.js";
 
-database.connectToDatabase("my-database");
-database.disconnectFromDatabase("my-database");
-
-console.log("hello emac");
+disconnectFromDatabase("my-database");
