@@ -3,6 +3,7 @@ comandos de navegação de diretórios
   ls            (list) lista arquivos no diretório
   cls          (clear) limpa terminal 
   cd          (change directory) muda de diretório
+  cd ..      volta uma pasta
   mkdir     (make directory) cria um diretório novo 
   code      (vscode) abre o editor de código do vscode
 
