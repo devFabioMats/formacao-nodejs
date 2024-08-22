@@ -2,7 +2,9 @@
 
 // CASOS DE USO
 // -> adicionar item no carrinho
-async function addItem(userCart) {}
+async function addItem(userCart, item) {
+  userCart.push(item);
+}
 
 // -> deletar item do carrinho
 async function deleteItem(userCart, name) {}
