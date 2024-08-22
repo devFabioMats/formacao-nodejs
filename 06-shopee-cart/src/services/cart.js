@@ -8,10 +8,10 @@ async function addItem(userCart, item) {
 
 // ✅ -> calcular o total do carrinho
 async function calculateTotal(userCart) {
-  //console.log("\nShopee Cart TOTAL IS:");
+  console.log("\nShopee Cart TOTAL IS:");
 
   const result = userCart.reduce((total, item) => total + item.subtotal(), 0);
-  console.log(`🎁Total: ${result}`);
+  console.log(`🎁 Total: ${result}`);
 }
 
 // -> deletar item do carrinho
@@ -30,7 +30,7 @@ async function deleteItem(userCart, name) {
 async function removeItem(userCart, index) {}
 
 async function displayCart(userCart) {
-  console.log("Shoppe cart list:");
+  console.log("\nShoppe cart list:");
   // percorrendo o carrinho do usuario ... carrinho do usuario.percorra a lista((o item percorrido, o numero da casa no vetor) => {})
   userCart.forEach((item, index) => {
     console.log(
