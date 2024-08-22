@@ -1,4 +1,4 @@
-<h1>Desafio de projeto do Felipão: Mario Kart.JS</h1>
+<h1>Desafio de Projeto do Felipão: Mario Kart.JS</h1>
 
   <table>
         <tr>
@@ -107,3 +107,15 @@
 - EXTRAS CONFRONTO
   - sortear aleatoriamente se é um casco(-1 ponto) ou um bomba(-2 pontos)
   - quem vence o confronto ganha um turbo (+ 1ponto) aleatoriamente
+
+
+<!--START_SECTION:footer-->
+
+<br />
+<br />
+
+<p align="center">
+  <a href="https://www.dio.me/" target="_blank">
+    <img align="center" src="https://raw.githubusercontent.com/digitalinnovationone/template-github-trilha/main/.github/assets/footer.png" alt="banner"/>
+  </a>
+</p>
