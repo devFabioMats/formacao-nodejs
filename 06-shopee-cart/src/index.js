@@ -13,10 +13,11 @@ const item2 = await createItem("Hot Wheels Lamborghini", 39.99, 3);
 // adicionei dois itens ao carrinho
 await cartService.addItem(myCart, item1);
 await cartService.addItem(myCart, item2);
+await cartService.displayCart(myCart);
 
 // deletei dois itens do carrinho
-await cartService.deleteItem(myCart, item2.name);
-await cartService.deleteItem(myCart, item1.name);
+// await cartService.deleteItem(myCart, item2.name);
+// await cartService.deleteItem(myCart, item1.name);
 
 console.log("Shopee Cart TOTAL IS:");
 await cartService.calculateTotal(myCart);

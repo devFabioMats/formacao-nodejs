@@ -29,4 +29,16 @@ async function deleteItem(userCart, name) {
 // -> remover um item - diminui um item
 async function removeItem(userCart, index) {}
 
-export { addItem, calculateTotal, deleteItem };
+async function displayCart(userCart) {
+  console.log("Shoppe cart list:");
+  // percorrendo o carrinho do usuario ... carrinho do usuario.percorra a lista((o item percorrido, o numero da casa no vetor) => {})
+  userCart.forEach((item, index) => {
+    console.log(
+      `${index + 1}. ${item.name} - R$ ${item.price} | ${
+        item.quantity
+      } | Subtotal R$ ${item.subtotal()}`
+    );
+  });
+}
+
+export { addItem, calculateTotal, deleteItem, removeItem, displayCart };
