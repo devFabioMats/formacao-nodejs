@@ -6,11 +6,6 @@
       src="https://img.icons8.com/?size=100&id=XGv3oOimibXn&format=png&color=000000" 
       width="100px" 
     />
-    <img 
-      alt="Shopee Cart" 
-      src="https://img.icons8.com/?size=100&id=2943&format=png&color=000000" 
-      width="50px" 
-    />
     <h1>Desafio de Projeto: <br/> Recriando a lógica do carrinho de compras da Shopee</h1>
   </p>
 </div>
