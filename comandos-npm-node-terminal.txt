@@ -12,3 +12,8 @@ comandos npm e node
   node [arquivo]     roda arquivo javascript
   node --watch [arquivo] node fica vigiando arquivo
   ctrl + c fecha o modo vigia do node
+
+Repositório Formação: https://github.com/digitalinnovationone/formacao-nodejs/tree/main/07-npm-packages-basic
+npm: https://www.npmjs.com/
+75 pacotes node: https://firebearstudio.com/blog/node-js-command-line-apps-utilities.html
+DOCUMENTAÇÃO NODE: https://docs.npmjs.com/
